@@ -55,3 +55,47 @@ p {
     .btn:hover {
         background:  #7c3aed;
     }
+     <!DOCTYPE html>
+<html>
+<head>
+  <title>Quest 6 - Flexbox Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
+
+ /* Quest 6 - Flexbox */
+
+.container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background: #8b5cf6;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+<div class="centered">
+  <div class="container">
+    ...
+  </div>
+</div>
