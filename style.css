@@ -1,3 +1,14 @@
-h1 {
-    color:tomato;
-    font-size: 36px;
+/* Element selector */
+p {
+    color: 333px;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+/* ID selector */
+#main-title {
+    font-size: 48px;
+    color:blue;
+}
