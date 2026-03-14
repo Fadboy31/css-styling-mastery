@@ -123,3 +123,33 @@ p {
 .nav-links a:hover {
   color: #8b5cf6;
 }
+
+/* Quest 8 - Responsive Design (Mobile First) */
+
+.container {
+  display: flex;
+  flex-direction: column; /* mobile: stacked vertically */
+  gap: 16px;
+  padding: 16px;
+}
+
+.box {
+  background: #8b5cf6;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+/* Desktop override */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* horizontal on tablets/desktops */
+    justify-content: center;
+    padding: 32px;
+  }
+
+  .box {
+    flex: 1; /* optional: make boxes same width */
+    max-width: 200px; /* prevent them from stretching too much */
+  }
+}
