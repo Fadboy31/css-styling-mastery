@@ -16,4 +16,16 @@
 </div>
 
 </body>
-</html>
+</html>/* Desktop override */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* horizontal on tablets/desktops */
+    justify-content: center;
+    padding: 32px;
+  }
+
+  .box {
+    flex: 1; /* optional: make boxes same width */
+    max-width: 200px; /* prevent them from stretching too much */
+  }
+}
